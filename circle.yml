@@ -26,4 +26,4 @@ jobs:
 
       - deploy:
           command:
-            ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+            ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive --project dublin-coach-survey
