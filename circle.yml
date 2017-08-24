@@ -24,8 +24,6 @@ jobs:
         
       - run: yarn test
 
-      - run: npm install -g firebase-tools 
-      
       - deploy:
           command:
-            firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+            ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
