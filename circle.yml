@@ -24,8 +24,6 @@ jobs:
         
       - run: yarn test
 
-  deployment:
-    production:
-      branch: master
-      commands:
-      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+      - deploy:
+          command:
+            firebase deploy --token=$FIREBASE_TOKEN --non-interactive
