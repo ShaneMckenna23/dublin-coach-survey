@@ -5,7 +5,7 @@ class WelcomePage extends Component {
     render () {
         return (
             <div>
-                <h1>Welcome</h1>
+                <h1>Welcome To My App</h1>
                 <Link to="/survey">Next</Link>
             </div>
         )
