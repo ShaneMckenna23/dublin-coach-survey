@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Iframe from 'react-iframe'
-import {Link, Switch, Route } from 'react-router-dom'
+import {Switch, Route } from 'react-router-dom'
 import {Button} from 'react-bootstrap'
 import Sidebar from '../Sidebar/Sidebar'
 import WelcomePage from '../WelcomePage/WelcomePage'
@@ -16,9 +16,9 @@ class SurveyPage extends Component {
     }
     
     updateModal(isVisible) {
-        this.state.isVisible = isVisible;
-      this.forceUpdate();
+        this.setState({isVisible:isVisible});
     }
+
     render () {
         return (
             <div>
