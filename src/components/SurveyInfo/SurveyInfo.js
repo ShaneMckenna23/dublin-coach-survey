@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Button} from 'react-bootstrap'
 import {Redirect} from 'react-router-dom'
+import Actions from '../../TaskActions'
 
 class SurveyInfo extends Component {
 
@@ -13,10 +14,12 @@ class SurveyInfo extends Component {
         this.setState({
             redirect: true
         })
+        Actions.editTask("s")
     }
+    
     render () {
         if(this.state.redirect){
-            return <Redirect push to="/survey/1"/>
+            return <Redirect push to="/task/1"/>
         }
         return (
             <div className="center-div">
