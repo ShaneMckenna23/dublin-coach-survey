@@ -3,7 +3,6 @@ import { Switch, Route,BrowserRouter } from 'react-router-dom'
 import WelcomePage from './components/WelcomePage/WelcomePage.js'
 import SurveyPage from './components/SurveyPage/SurveyPage.js'
 
-
 const App = () => (
   <main>
     <BrowserRouter>
@@ -16,3 +15,4 @@ const App = () => (
 )
 
 export default App
+

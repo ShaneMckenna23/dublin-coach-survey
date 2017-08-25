@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Iframe from 'react-iframe'
 import {Switch, Route } from 'react-router-dom'
 import {Button} from 'react-bootstrap'
 import Sidebar from '../Sidebar/Sidebar'
 import WelcomePage from '../WelcomePage/WelcomePage'
+import TaskOne from '../TaskOne/TaskOne'
 
 class SurveyPage extends Component {
 
@@ -27,15 +27,12 @@ class SurveyPage extends Component {
                     <Sidebar side='left' isVisible={ this.state.isVisible } onHide={ () => this.updateModal(false) }>
                         <Switch>
                             <Route exact path='/survey' component={WelcomePage}/>
-                            <Route exact path='/survey/1' component={WelcomePage}/>
+                            <Route exact path='/survey/1' component={TaskOne}/>
                         </Switch>
                     </Sidebar>
                 </div>
-                <Iframe url="http://www.dublincoach.ie"
-                    width="450px"
-                    height="450px"
-                    display="initial"
-                    position="relative"/>
+
+                <TaskOne/>
             </div>
         )
     }
