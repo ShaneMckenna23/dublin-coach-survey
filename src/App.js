@@ -1,14 +1,14 @@
 import React from 'react'
 import { Switch, Route,BrowserRouter } from 'react-router-dom'
 import WelcomePage from './components/WelcomePage/WelcomePage.js'
-import SurveyPage from './components/SurveyPage/SurveyPage.js'
+import SurveyInfo from './components/SurveyInfo/SurveyInfo.js'
 
 const App = () => (
   <main>
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={WelcomePage}/>
-        <Route path='/survey' component={SurveyPage}/>
+        <Route path='/survey' component={SurveyInfo}/>
       </Switch>
     </BrowserRouter>
   </main>
