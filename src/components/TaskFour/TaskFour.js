@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import {Button} from 'react-bootstrap'
 
-class TaskOne extends Component {
+class TaskFour extends Component {
 
     constructor(){
         super()
@@ -18,18 +18,16 @@ class TaskOne extends Component {
 
     render(){
         if(this.state.redirect){
-            return <Redirect push to="/task/1/survey"/>
+            return <Redirect push to="/task/4/survey"/>
         }
 
         return (
             <div className="card">
-                <h1>Sign in</h1>
-                <p>For this task simply sign in using the following account details.</p>
-                <p>Username: test<br/> Password:  test</p>
+                <h1>Task Four</h1>
                 <Button onClick={this.onClick}>Begin</Button>
             </div>
         )
     }
 }
 
-export default TaskOne
+export default TaskFour

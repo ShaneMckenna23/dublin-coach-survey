@@ -18,14 +18,12 @@ class TaskOne extends Component {
 
     render(){
         if(this.state.redirect){
-            return <Redirect push to="/task/1/survey"/>
+            return <Redirect push to="/task/5/survey"/>
         }
 
         return (
             <div className="card">
-                <h1>Sign in</h1>
-                <p>For this task simply sign in using the following account details.</p>
-                <p>Username: test<br/> Password:  test</p>
+                <h1>Task Five</h1>
                 <Button onClick={this.onClick}>Begin</Button>
             </div>
         )
