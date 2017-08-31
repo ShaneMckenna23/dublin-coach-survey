@@ -24,7 +24,7 @@ class TaskThree extends Component {
 
         return (
             <div className="card">
-                <h1>Task Two</h1>
+                <h1>Task Three</h1>
                 <Button onClick={this.onClick}>Begin</Button>
             </div>
         )

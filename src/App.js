@@ -13,6 +13,7 @@ import TaskFour from './components/TaskFour/TaskFour.js'
 import TaskFourSurvey from './components/TaskFourSurvey/TaskFourSurvey.js'
 import TaskFive from './components/TaskFive/TaskFive.js'
 import TaskFiveSurvey from './components/TaskFiveSurvey/TaskFiveSurvey.js'
+import Results from './components/Results/Results.js'
 
 const App = () => (
   <div className="container">
@@ -28,7 +29,7 @@ const App = () => (
                   atLeave={{ translateX: -200 }}
                   atActive={{ translateX: 0 }}
                   mapStyles={styles => {
-                    if(styles.translateX < -150){
+                    if(styles.translateX < -140){
                       return { display: 'none'}
                     }
                     return { transform: `translateX(${styles.translateX}%)` }
@@ -36,6 +37,7 @@ const App = () => (
                 >
                   <Switch key={location.key} location={location}>
                     <Route exact path='/' component={SurveyInfo}/>
+                    <Route exact path='/results' component={Results}/>
                     <Route exact path='/task/1' component={TaskOne}/>
                     <Route path='/task/1/survey' component={TaskOneSurvey}/>
                     <Route exact path='/task/2' component={TaskTwo}/>

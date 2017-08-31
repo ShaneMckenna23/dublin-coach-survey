@@ -1,31 +1,15 @@
 import React, { Component } from 'react'
 import {Button} from 'react-bootstrap'
-import {Redirect} from 'react-router-dom'
-import Actions from '../../TaskActions'
+import {LinkContainer} from 'react-router-bootstrap'
 
 class SurveyInfo extends Component {
-
-    constructor(){
-        super()
-        this.state = {redirect: false}
-    }
-
-    handleClick = () =>{
-        this.setState({
-            redirect: true
-        })
-        Actions.editTask("s")
-    }
     
     render () {
-        if(this.state.redirect){
-            return <Redirect push to="/task/1"/>
-        }
         return (
             <div className="card">
                 <h1>Survey Information</h1>
                 <div>
-                    <p>This survey is here to kash salkjd hjsa oiasd bkasdousa khabsd askjhsd iasdj kjasdkid oaishdkjasdbasdiasd</p>
+                    <p>This survey will be used to learn about dublincoach.ie user experience</p>
                     <br/>
                     <p>Tasks to perform:</p>
                     <ul>
@@ -36,7 +20,9 @@ class SurveyInfo extends Component {
                         <li>asdasd asd d as</li>
                     </ul>
                     <div>
-                        <Button onClick={this.handleClick}>Start</Button>
+                        <LinkContainer to="/task/1">
+                            <Button>Start</Button>
+                        </LinkContainer>
                     </div>
                 </div>
             </div>
