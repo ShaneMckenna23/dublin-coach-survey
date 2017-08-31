@@ -3,7 +3,9 @@ import { EventEmitter } from 'events';
 
 let task = {
     ref: "",
-    survey: {}
+    survey: {
+        userId: Math.random()
+    }
 };
 
 let results = {}
@@ -30,7 +32,9 @@ class TaskStore extends EventEmitter {
     clearAll(){
         task = {
             ref: "",
-            survey: {}
+            survey: {
+                userId: task.survey.userId
+            }
         };
     }
 
