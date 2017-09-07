@@ -12,8 +12,7 @@ class TaskOne extends Component {
         return (
             <div className="card">
                 <h1>Sign in</h1>
-                <p>For this task simply sign in using the following account details.</p>
-                <p>Username: test<br/> Password:  test</p>
+                <p>For this task simply locate the sign in option.</p>
                 <LinkContainer to="/task/1/survey">
                     <Button onClick={this.onClick}>Start</Button>
                 </LinkContainer>

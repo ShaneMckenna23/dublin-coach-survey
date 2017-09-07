@@ -53,6 +53,21 @@ class Results extends Component {
         return <h1>No Results</h1>
     }
 
+    renderTaskThree(){
+        let itemsToRender = [];
+        let taskThree = this.state.results.TASK_THREE
+
+        if (taskThree != null){
+            Object.keys(taskThree).map(function(objectKey, index) {
+                let data = taskThree[objectKey];
+                itemsToRender.push(<TaskItem data={data}/>)
+                return null
+            });
+            return itemsToRender
+        }
+        return <h1>No Results</h1>
+    }
+
     render () {
         return (
             <div>
@@ -63,6 +78,10 @@ class Results extends Component {
                 <h1>Task Two</h1>
                 <ListGroup>
                     {this.renderTaskTwo()}
+                </ListGroup>
+                <h1>Task Three</h1>
+                <ListGroup>
+                    {this.renderTaskThree()}
                 </ListGroup>
             </div>
         )

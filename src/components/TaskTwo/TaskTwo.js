@@ -14,6 +14,7 @@ class TaskTwo extends Component {
                 <h1>Book a Ticket</h1>
                 <p>For this task follow the steps it takes to book the following:</p>
                 <p>Return Ticket for 2 Adults <br/>Start: Tralee - Princes Street<br/> Going: Dublin - City Centre</p>
+                <p><b>Note:</b> You don’t need to fill out the billing form. </p>
                 <LinkContainer to="/task/2/survey">
                     <Button onClick={this.onClick}>Start</Button>
                 </LinkContainer>
