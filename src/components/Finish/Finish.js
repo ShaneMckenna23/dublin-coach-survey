@@ -22,9 +22,12 @@ class Finish extends Component {
     onSubmit = () =>{
         saveData(Store.getAllTasks())
         Store.clearAll()
-        this.setState({
-            submit: true
-        })
+        let _this = this;
+        setTimeout(function() {
+            _this.setState({
+                submit: true
+            })
+        }, 650);
     }
 
     render () {
