@@ -7,15 +7,15 @@ class SurveyInfo extends Component {
     render () {
         return (
             <div className="card">
-                <h1>Survey Information</h1>
+                <h1>Welcome to the Dublin Coach survey</h1>
                 <div>
                     <p>This survey will be used to learn about user experience on Dublin coach’s website. 
                     If you cannot finish a task move onto the questions and explain why.</p>
                     <p>Once the survey
-                    is complete you will be in with a chance to win €20 and you will be asked to provide an email. 
+                    is complete you will be in with a chance to win a €20.
                     Email will be used to contact the winner.</p>
 
-                    
+                    <p>Click 'Start' to begin</p>                  
                     <div>
                         <LinkContainer to="/task/1">
                             <Button>Start</Button>

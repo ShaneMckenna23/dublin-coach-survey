@@ -1,30 +1,21 @@
 import React, {Component} from 'react'
-import {Redirect} from 'react-router-dom'
 import {Button} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 
 class TaskFour extends Component {
 
-    constructor(){
-        super()
-        this.state = {redirect: false}
-    }
-
     onClick = () => {
         window.open("http://www.dublincoach.ie")
-        this.setState({
-            redirect: true
-        })
     }
 
     render(){
-        if(this.state.redirect){
-            return <Redirect push to="/task/4/survey"/>
-        }
-
         return (
             <div className="card">
-                <h1>Task Four</h1>
-                <Button onClick={this.onClick}>Begin</Button>
+                <h1>Find News</h1>
+                <p>Find out where the Tralee stop relocated to.</p>
+                <LinkContainer to="/task/4/survey">
+                    <Button onClick={this.onClick}>Start</Button>
+                </LinkContainer>
             </div>
         )
     }

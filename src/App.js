@@ -12,7 +12,7 @@ import TaskThreeSurvey from './components/TaskThreeSurvey/TaskThreeSurvey.js'
 import TaskFour from './components/TaskFour/TaskFour.js'
 import TaskFourSurvey from './components/TaskFourSurvey/TaskFourSurvey.js'
 import TaskFive from './components/TaskFive/TaskFive.js'
-import TaskFiveSurvey from './components/TaskFiveSurvey/TaskFiveSurvey.js'
+import Finish from './components/Finish/Finish.js'
 import Results from './components/Results/Results.js'
 
 const App = () => (
@@ -47,7 +47,7 @@ const App = () => (
                     <Route exact path='/task/4' component={TaskFour}/>
                     <Route path='/task/4/survey' component={TaskFourSurvey}/> 
                     <Route exact path='/task/5' component={TaskFive}/>
-                    <Route path='/task/5/survey' component={TaskFiveSurvey}/> 
+                    <Route path='/finish' component={Finish}/> 
                   </Switch>
                 </RouteTransition>
               );

@@ -12,7 +12,7 @@ class TaskThree extends Component {
         return (
             <div className="card">
                 <h1>Find a Stop</h1>
-                <p>Find the location of the Dublin city center stop</p>
+                <p>Find the location of the Dublin city center stop.</p>
                 <LinkContainer to="/task/3/survey">
                     <Button onClick={this.onClick}>Start</Button>
                 </LinkContainer>

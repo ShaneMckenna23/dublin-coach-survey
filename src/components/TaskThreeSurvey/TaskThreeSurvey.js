@@ -56,14 +56,14 @@ class TaskThreeSurvey extends Component {
                 <Collapse in={this.state.infoOpen}>
                 <div>
                   <Well>
-                    <p>Find the location of the Dublin city center stop</p>
+                    <p>Find the location of the Dublin city center stop.</p>
                   </Well>
                 </div>
               </Collapse>
               <Collapse in={this.state.hintOpen}>
                 <div>
                   <Well>
-                    <p>the stop can be found on the tab: timetables and fares – select a service – stop information – click a stop.</p>
+                    <p>The stop can be found at: timetables and fares – select a service – stop information – click a stop.</p>
                   </Well>
                 </div>
               </Collapse>
