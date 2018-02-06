@@ -12,7 +12,7 @@ class SurveyInfo extends Component {
                     <p>This survey will be used to learn about user experience on Dublin coach’s website. 
                     If you cannot finish a task move onto the questions and explain why.</p>
                     <p>Once the survey
-                    is complete you will be in with a chance to win a €20.
+                    is complete you will be in with a chance to win a €20 Just Eat Voucher.
                     Email will be used to contact the winner.</p>
 
                     <p>Click 'Start' to begin</p>                  

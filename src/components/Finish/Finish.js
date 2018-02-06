@@ -36,7 +36,7 @@ class Finish extends Component {
             <div className="card">
                 {this.state.submit === true ? emailSuccess : null}
                 <h1 style={{display:"inline"}}>Thank You</h1>
-                <p>Enter your email for a chance to win €20</p>
+                <p>Enter your email for a chance to win €20 Just Eat Voucher.</p>
                 <Form horizontal>
                     <FormGroup controlId="email">
                         <Col componentClass={ControlLabel} sm={12} style={{textAlign: "left"}}>
